@@ -10,6 +10,7 @@ import { Button } from '@mui/material';
 import { useNavigate } from 'react-router';
 
 const Home = () => {
+   alert('Test Login Credientials')
    alert('Student Login(Name:rahul , Email: rahul@mait.student.ac.in , password : 465)')
    alert('Teacher Login(Name:shlok, Email: prakhar@mait.ac.in, password: test)')
    
