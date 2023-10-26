@@ -60,7 +60,7 @@ const TeacherLogin = () => {
             password:teacherDetails.password
         }
        
-          response = await fetch('http://localhost:3000/teacher/login', {
+          response = await fetch('https://studysyncbackend.onrender.com/teacher/login', {
             method: 'POST',
             headers:{
                 "Content-Type":"application/json",

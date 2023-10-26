@@ -19,7 +19,7 @@ const StudentProject = () => {
       try {
         console.log("fetch initiated");
         const response = await fetch(
-          `http://localhost:3000/teacher/student/project/${projectId}`,
+          `https://studysyncbackend.onrender.com/teacher/student/project/${projectId}`,
           {
             method: "GET",
             headers: {

@@ -106,7 +106,7 @@ function UploadProject() {
   const handleTeacherFocus = async () => {
     setinputloading(true);
     try {
-      const response = await fetch("http://localhost:3000/allTeachers");
+      const response = await fetch("https://studysyncbackend.onrender.com/allTeachers");
       const data = await response.json();
       setinputloading(false);
       setTeachers(data.teachers);
@@ -132,7 +132,7 @@ function UploadProject() {
     formData.append("content", file);
 
     try {
-      const response = await fetch("http://localhost:3000/student/projects/upload", {
+      const response = await fetch("https://studysyncbackend.onrender.com/student/projects/upload", {
         method: "POST",
         headers: {
           authorization: `Bearer ${localStorage.getItem("token")}`,

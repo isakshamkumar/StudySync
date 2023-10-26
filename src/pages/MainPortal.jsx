@@ -79,7 +79,7 @@ function MainPortal() {
     setLoading(true);
 
     try {
-      const response = await fetch(`http://localhost:3000/portal/seeProject?keyword=${keyword}`,{
+      const response = await fetch(`https://studysyncbackend.onrender.com/portal/seeProject?keyword=${keyword}`,{
         method:'POST'
       });
       const data = await response.json();

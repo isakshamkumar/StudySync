@@ -16,7 +16,7 @@ const setTeacherDetails=useSetRecoilState(teacherstate)
 
 const meRouteHandlerForStudent=async()=>{
   // console.log('me route');
-  let response= await fetch("http://localhost:3000/student/me",{
+  let response= await fetch("https://studysyncbackend.onrender.com/student/me",{
     method:"GET" ,
     headers:{Authorization:`Bearer ${localStorage.getItem("token")}`,
     "Content-Type":"application/json"
@@ -50,7 +50,7 @@ const meRouteHandlerForStudent=async()=>{
 }
 const meRouteHandlerForTeacher=async()=>{
   // console.log('me route');
-  let response= await fetch("http://localhost:3000/teacher/me",{
+  let response= await fetch("https://studysyncbackend.onrender.com/teacher/me",{
     method:"GET" ,
     headers:{Authorization:`Bearer ${localStorage.getItem("token")}`,
     "Content-Type":"application/json"

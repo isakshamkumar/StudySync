@@ -71,7 +71,7 @@ const Class = () => {
     }, []);
   
     const classViewHandler = async (id) => {
-      let response = await fetch(`http://localhost:3000/teacher/getclasses/${id}`, {
+      let response = await fetch(`https://studysyncbackend.onrender.com/teacher/getclasses/${id}`, {
         method: 'GET',
         headers: { authorization: 'Bearer ' + localStorage.getItem('token') },
       });

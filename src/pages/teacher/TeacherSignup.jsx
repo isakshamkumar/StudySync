@@ -98,7 +98,7 @@ const TeacherSignup = () => {
           contactNumber: teacherDetails.contactNumber,
         };
 
-        response = await fetch("http://localhost:3000/teacher/signup", {
+        response = await fetch("https://studysyncbackend.onrender.com/teacher/signup", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -142,7 +142,7 @@ const TeacherSignup = () => {
   };
   const handleCollegeFocus = async () => {
     setinputloading(true);
-    let response = await fetch("http://localhost:3000/allColleges");
+    let response = await fetch("https://studysyncbackend.onrender.com/allColleges");
     let data = await response.json();
     setTimeout(() => {
         
@@ -152,7 +152,7 @@ const TeacherSignup = () => {
   };
   const handleDepartmentFocus = async () => {
     setinputloading(true);
-    let response = await fetch("http://localhost:3000/alldepartments");
+    let response = await fetch("https://studysyncbackend.onrender.com/alldepartments");
     let data = await response.json();
   
     setTimeout(() => {

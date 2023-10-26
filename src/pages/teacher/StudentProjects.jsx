@@ -24,7 +24,7 @@ const StudentProjects = () => {
     // console.log('fetch initiated in stuidentprojectss');
     setloading(true)
     try {
-      const response = await fetch(`http://localhost:3000/teacher/allClasses/student/${id}`, {
+      const response = await fetch(`https://studysyncbackend.onrender.com/teacher/allClasses/student/${id}`, {
         method: 'GET',
         headers: { authorization: `Bearer ${localStorage.getItem('token')}` },
       });

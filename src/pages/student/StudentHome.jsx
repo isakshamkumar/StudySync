@@ -19,7 +19,7 @@ const StudentHome = () => {
 
   const studentMeRouteHandler = async () => {
    setloading(true)
-    const response = await fetch("http://localhost:3000/student/me", {
+    const response = await fetch("https://studysyncbackend.onrender.com/student/me", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

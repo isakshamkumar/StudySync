@@ -24,7 +24,7 @@ const AllClasses = () => {
   const [classes, setclasses] = useState([]);
  
   const getClassesHandler = async () => {
-    let response = await fetch("http://localhost:3000/teacher/getclasses", {
+    let response = await fetch("https://studysyncbackend.onrender.com/teacher/getclasses", {
       method: "GET",
       headers: { authorization: "Bearer " + localStorage.getItem("token") },
     });

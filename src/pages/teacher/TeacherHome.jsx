@@ -19,7 +19,7 @@ const TeacherHome = () => {
   //  console.log(teacherdetails ,'asdas');
    const meRouteHandler=async()=>{
       // console.log('me route for teacher');
-      let response= await fetch("http://localhost:3000/teacher/me",{
+      let response= await fetch("https://studysyncbackend.onrender.com/teacher/me",{
         method:"GET" ,
         headers:{Authorization:`Bearer ${localStorage.getItem("token")}`,
         "Content-Type":"application/json"

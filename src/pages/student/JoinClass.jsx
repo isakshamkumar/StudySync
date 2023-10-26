@@ -30,7 +30,7 @@ const JoinClass = () => {
 
     try {
       setClassDetails(null);
-      const response = await fetch("http://localhost:3000/student/getClass", {
+      const response = await fetch("https://studysyncbackend.onrender.com/student/getClass", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -58,7 +58,7 @@ const JoinClass = () => {
     setLoading(true); // Set loading to true when the button is clicked
    
     try {
-        const response = await fetch("http://localhost:3000/student/joinClass", {
+        const response = await fetch("https://studysyncbackend.onrender.com/student/joinClass", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

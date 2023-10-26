@@ -74,7 +74,7 @@ setUserAs({loggedInAsStudent:true})
           password: studentDetails.password,
         };
 
-        response = await fetch("http://localhost:3000/student/login", {
+        response = await fetch("https://studysyncbackend.onrender.com/student/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
